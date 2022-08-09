@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 116vh;
+    background-image: url(food.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    opacity: .9;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+    rgba(0,0,0,1),
+    rgba(0,0,0,.8),
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.3),
+    rgba(0,0,0,0));
+}
+.menu{
+    width: 100%;
+    float: right;
+    height: 70px;
+}
+ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-right: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: green;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    color: aliceblue;
+}
+.content h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding-left: 0px;
+    margin-top: 26%;
+}
+.content button{
+    height: 30px;
+    width: 150px;
+    padding-left: 25px;
+    border-radius: 30px;
+    border: 2px solid rgb(24, 120, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.content p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    padding-left: 5px;
+    margin-top: 1%;
+    letter-spacing: 0px;
+}
+@media only screen and (max-width:900px){
+    nav{
+        width: 100%;
+        height: 109vh;
+        background-image: url(food.jpg);
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        opacity: .9;
+    }
+    .overlay{
+        position: absolute;
+        top: 0;
+        width: 0%;
+        height: 0%;
+        background: linear-gradient(to right,
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.3),
+        rgba(0,0,0,0));
+    }
+    .menu{
+        width: 100%;
+        float: right;
+        height: 70px;
+        display: block;
+
+    }
+    ul{
+        float: right;
+        justify-content: center;
+        align-items: center;
+        left:0;
+    }
+    ul li{
+        list-style: none;
+        margin-right: 62px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+    ul li a{
+        text-decoration: none;
+        color:white;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+        display: inline-block;
+    }
+    ul li a:hover{
+        background-color: green;
+        color: rgb(231, 239, 231);
+    }
+    .content{
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+        color: aliceblue;
+        margin-left: 20%;
+    }
+    .content h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 27px;
+        padding-left: 0px;
+        margin-top: 43%;
+        margin-right: 20%;
+        font-weight: bolder;
+        margin-left: 0%;
+    }
+    .content button{
+        height: 30px;
+        width: 106px;
+        padding-left: 25px;
+        border-radius: 25px;
+        border: 2px solid rgb(24, 120, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    .content p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+}   
